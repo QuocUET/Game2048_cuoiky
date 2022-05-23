@@ -60,6 +60,17 @@ bool gameChanged(int a[4][4], int b[4][4]) {
 	}
 	return false;
 }
+int winGame(int vt[4][4]){
+    for(int x=0;x<4;x++){
+        for(int y=0;y<4;y++){
+            if(vt[x][y]==MAX){
+                return 1;
+            }
+        }
+    }
+    return 0;
+}
+
 int gameOver(int vt[4][4]){
     int is_game_over=1;
     for(int x=0;x<4;x++){
@@ -345,6 +356,8 @@ int main(int argc, char** argv) {
 
 	int vt[4][4];
 	int a[4][4];
+	int question=0;
+
 	for(short i=0;i<4;i++) {
 		for (short j=0;j<4;j++) {
 			vt[i][j]=0;
@@ -372,10 +385,17 @@ int main(int argc, char** argv) {
 		int key=getch();
 		system("cls");
 
+        if(winGame(vt) && !question){
+            question = !question;
+            cout<<"BAN THANG";
+            cout<<"Tiep tuc? (y/n)";
+            exit(1);
+        }
+
         if(gameOver(vt)){
             cout<<"~~~~~~~~~~~~~~~~~~GAME OVER~~~~~~~~~~~~~~~~~~";
             cout<<"\n<<<Cam on ban da tham gia tro choi cua toi>>>";
-            exit(0);
+            exit(2);
         }
 
 		if (key==224) {
