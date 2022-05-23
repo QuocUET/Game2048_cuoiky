@@ -1,4 +1,4 @@
-# Game2048_cuoiky
+# Game2048_cuoiky_Nguyễn Trung Quốc_17020990
 1. Hướng dẫn cài đặt
 - Paste link:"https://github.com/QuocUET/Game2048_cuoiky/tree/master" để tìm thấy được file game
 - Copy "game2048.cpp" lên codeBlocks và chạy "build and run" để khởi tạo chương trình.
