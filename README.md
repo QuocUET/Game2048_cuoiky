@@ -1,7 +1,7 @@
 # Game2048_cuoiky_Nguyễn Trung Quốc_17020990
 1. Hướng dẫn cài đặt
 - Paste link:"https://github.com/QuocUET/Game2048_cuoiky/tree/master" để tìm thấy được file game
-- Copy "game2048.cpp" lên codeBlocks và chạy "build and run" để khởi tạo chương trình.
+- Mở "game2048.cpp" lên codeBlocks và chạy "build and run" để khởi tạo chương trình.
 2. Mô tả chung về trò chơi, các ý tưởng chính
 - Tạo ra một trò chơi 2048 đơn giản với mục đích chính là để giải trí cho người dùng, người chơi chỉ cần di chuyển phím theo hướng mà mình muốn
 chơi, và cách con số trùng và gần nhau để được nhân đôi lên ra con số lớn hơn.
